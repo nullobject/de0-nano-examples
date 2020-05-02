@@ -1,0 +1,524 @@
+<session jtag_chain="USB-Blaster [1-2]" jtag_device="@1: 10CL025(Y|Z)/EP3C25/EP4CE22 (0x020F30DD)" sof_file="output_files/counter.sof">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" log="USE_GLOBAL_TEMP" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <instance enabled="true" entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <position_info>
+      <single attribute="active tab" value="0"/>
+      <single attribute="data horizontal scroll position" value="15"/>
+      <single attribute="data vertical scroll position" value="0"/>
+      <single attribute="setup horizontal scroll position" value="0"/>
+      <single attribute="setup vertical scroll position" value="0"/>
+      <single attribute="zoom level denominator" value="1"/>
+      <single attribute="zoom level numerator" value="16"/>
+      <single attribute="zoom offset denominator" value="1"/>
+      <single attribute="zoom offset numerator" value="8184"/>
+      <multi attribute="timebars" size="1" value="1"/>
+    </position_info>
+    <signal_set global_temp="1" name="signal_set: 2019/07/19 20:25:58  #0">
+      <clock name="clk" polarity="posedge" tap_mode="probeonly"/>
+      <config pipeline_level="2" ram_type="AUTO" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="128" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="n[0]" tap_mode="classic"/>
+          <wire name="n[1]" tap_mode="classic"/>
+          <wire name="n[2]" tap_mode="classic"/>
+          <wire name="n[3]" tap_mode="classic"/>
+          <wire name="n[4]" tap_mode="classic"/>
+          <wire name="n[5]" tap_mode="classic"/>
+          <wire name="n[6]" tap_mode="classic"/>
+          <wire name="n[7]" tap_mode="classic"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="led[0]" tap_mode="classic"/>
+          <wire name="led[1]" tap_mode="classic"/>
+          <wire name="led[2]" tap_mode="classic"/>
+          <wire name="led[3]" tap_mode="classic"/>
+          <wire name="led[4]" tap_mode="classic"/>
+          <wire name="led[5]" tap_mode="classic"/>
+          <wire name="led[6]" tap_mode="classic"/>
+          <wire name="led[7]" tap_mode="classic"/>
+          <wire name="n[0]" tap_mode="classic"/>
+          <wire name="n[1]" tap_mode="classic"/>
+          <wire name="n[2]" tap_mode="classic"/>
+          <wire name="n[3]" tap_mode="classic"/>
+          <wire name="n[4]" tap_mode="classic"/>
+          <wire name="n[5]" tap_mode="classic"/>
+          <wire name="n[6]" tap_mode="classic"/>
+          <wire name="n[7]" tap_mode="classic"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="led[0]" tap_mode="classic"/>
+          <wire name="led[1]" tap_mode="classic"/>
+          <wire name="led[2]" tap_mode="classic"/>
+          <wire name="led[3]" tap_mode="classic"/>
+          <wire name="led[4]" tap_mode="classic"/>
+          <wire name="led[5]" tap_mode="classic"/>
+          <wire name="led[6]" tap_mode="classic"/>
+          <wire name="led[7]" tap_mode="classic"/>
+          <wire name="n[0]" tap_mode="classic"/>
+          <wire name="n[1]" tap_mode="classic"/>
+          <wire name="n[2]" tap_mode="classic"/>
+          <wire name="n[3]" tap_mode="classic"/>
+          <wire name="n[4]" tap_mode="classic"/>
+          <wire name="n[5]" tap_mode="classic"/>
+          <wire name="n[6]" tap_mode="classic"/>
+          <wire name="n[7]" tap_mode="classic"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <unified_setup_data_view>
+          <node is_selected="false" level-0="alt_or" name="led[7..0]" order="msb_to_lsb" state="expand" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="output pin">
+            <node data_index="7" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="dont_care" name="led[7]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="7" tap_mode="classic" trigger_index="7" type="unknown"/>
+            <node data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="dont_care" name="led[6]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="classic" trigger_index="6" type="unknown"/>
+            <node data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="dont_care" name="led[5]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" trigger_index="5" type="unknown"/>
+            <node data_index="4" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="dont_care" name="led[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="4" tap_mode="classic" trigger_index="4" type="unknown"/>
+            <node data_index="3" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="dont_care" name="led[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="3" tap_mode="classic" trigger_index="3" type="unknown"/>
+            <node data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="dont_care" name="led[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="classic" trigger_index="2" type="unknown"/>
+            <node data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="dont_care" name="led[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="classic" trigger_index="1" type="unknown"/>
+            <node data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="dont_care" name="led[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="0" tap_mode="classic" trigger_index="0" type="unknown"/>
+          </node>
+          <node is_selected="false" level-0="alt_or" name="n[7..0]" order="msb_to_lsb" state="expand" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="register">
+            <node data_index="15" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="n[7]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="15" tap_mode="classic" trigger_index="7" type="unknown"/>
+            <node data_index="14" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="n[6]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="14" tap_mode="classic" trigger_index="6" type="unknown"/>
+            <node data_index="13" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="n[5]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="13" tap_mode="classic" trigger_index="5" type="unknown"/>
+            <node data_index="12" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="n[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="12" tap_mode="classic" trigger_index="4" type="unknown"/>
+            <node data_index="11" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="n[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="11" tap_mode="classic" trigger_index="3" type="unknown"/>
+            <node data_index="10" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="n[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="10" tap_mode="classic" trigger_index="2" type="unknown"/>
+            <node data_index="9" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="n[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="9" tap_mode="classic" trigger_index="1" type="unknown"/>
+            <node data_index="8" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="n[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="8" tap_mode="classic" trigger_index="0" type="unknown"/>
+          </node>
+        </unified_setup_data_view>
+        <data_view>
+          <bus is_selected="false" level-0="alt_or" name="led[7..0]" order="msb_to_lsb" state="expand" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="output pin">
+            <net data_index="7" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="dont_care" name="led[7]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="7" tap_mode="classic" trigger_index="7" type="unknown"/>
+            <net data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="dont_care" name="led[6]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="classic" trigger_index="6" type="unknown"/>
+            <net data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="dont_care" name="led[5]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" trigger_index="5" type="unknown"/>
+            <net data_index="4" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="dont_care" name="led[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="4" tap_mode="classic" trigger_index="4" type="unknown"/>
+            <net data_index="3" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="dont_care" name="led[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="3" tap_mode="classic" trigger_index="3" type="unknown"/>
+            <net data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="dont_care" name="led[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="classic" trigger_index="2" type="unknown"/>
+            <net data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="dont_care" name="led[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="classic" trigger_index="1" type="unknown"/>
+            <net data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="dont_care" name="led[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="0" tap_mode="classic" trigger_index="0" type="unknown"/>
+          </bus>
+          <bus is_selected="false" level-0="alt_or" name="n[7..0]" order="msb_to_lsb" state="expand" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="register">
+            <net data_index="15" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="n[7]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="15" tap_mode="classic" trigger_index="7" type="unknown"/>
+            <net data_index="14" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="n[6]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="14" tap_mode="classic" trigger_index="6" type="unknown"/>
+            <net data_index="13" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="n[5]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="13" tap_mode="classic" trigger_index="5" type="unknown"/>
+            <net data_index="12" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="n[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="12" tap_mode="classic" trigger_index="4" type="unknown"/>
+            <net data_index="11" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="n[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="11" tap_mode="classic" trigger_index="3" type="unknown"/>
+            <net data_index="10" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="n[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="10" tap_mode="classic" trigger_index="2" type="unknown"/>
+            <net data_index="9" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="n[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="9" tap_mode="classic" trigger_index="1" type="unknown"/>
+            <net data_index="8" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="n[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="8" tap_mode="classic" trigger_index="0" type="unknown"/>
+          </bus>
+        </data_view>
+        <setup_view>
+          <bus is_selected="false" level-0="alt_or" name="led[7..0]" order="msb_to_lsb" state="expand" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="output pin">
+            <net data_index="7" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="dont_care" name="led[7]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="7" tap_mode="classic" trigger_index="7" type="unknown"/>
+            <net data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="dont_care" name="led[6]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="classic" trigger_index="6" type="unknown"/>
+            <net data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="dont_care" name="led[5]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" trigger_index="5" type="unknown"/>
+            <net data_index="4" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="dont_care" name="led[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="4" tap_mode="classic" trigger_index="4" type="unknown"/>
+            <net data_index="3" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="dont_care" name="led[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="3" tap_mode="classic" trigger_index="3" type="unknown"/>
+            <net data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="dont_care" name="led[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="classic" trigger_index="2" type="unknown"/>
+            <net data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="dont_care" name="led[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="classic" trigger_index="1" type="unknown"/>
+            <net data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="dont_care" name="led[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="0" tap_mode="classic" trigger_index="0" type="unknown"/>
+          </bus>
+          <bus is_selected="false" level-0="alt_or" name="n[7..0]" order="msb_to_lsb" state="expand" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="register">
+            <net data_index="15" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="n[7]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="15" tap_mode="classic" trigger_index="7" type="unknown"/>
+            <net data_index="14" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="n[6]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="14" tap_mode="classic" trigger_index="6" type="unknown"/>
+            <net data_index="13" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="n[5]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="13" tap_mode="classic" trigger_index="5" type="unknown"/>
+            <net data_index="12" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="n[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="12" tap_mode="classic" trigger_index="4" type="unknown"/>
+            <net data_index="11" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="n[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="11" tap_mode="classic" trigger_index="3" type="unknown"/>
+            <net data_index="10" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="n[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="10" tap_mode="classic" trigger_index="2" type="unknown"/>
+            <net data_index="9" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="n[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="9" tap_mode="classic" trigger_index="1" type="unknown"/>
+            <net data_index="8" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="n[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="8" tap_mode="classic" trigger_index="0" type="unknown"/>
+          </bus>
+        </setup_view>
+        <trigger_in_editor/>
+        <trigger_out_editor/>
+      </presentation>
+      <trigger CRC="B7B0D967" attribute_mem_mode="false" gap_record="true" global_temp="1" name="trigger: 2019/07/19 20:25:58  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="1" storage_mode="port" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">'n[0]' == low &amp;&amp; 'n[1]' == low &amp;&amp; 'n[2]' == low &amp;&amp; 'n[3]' == low &amp;&amp; 'n[4]' == low &amp;&amp; 'n[5]' == low &amp;&amp; 'n[6]' == low &amp;&amp; 'n[7]' == low
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>1111111111111111
+            <pwr_up_transitional>1111111111111111</pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+        <log>
+          <data global_temp="1" name="log: Trig @ 2019/07/19 20:27:40 (0:0:0.0 elapsed)" power_up_mode="false" sample_depth="128" trigger_position="16">11110111000011110000111110001111100011110100111101001111110011111100111100101111001011111010111110101111011011110110111111101111111011110001111100011111100111111001111101011111010111111101111111011111001111110011111110111111101111110111111101111111111111111111111100000000000000001000000010000000010000000100000011000000110000000010000000100000101000001010000001100000011000001110000011100000000100000001000010010000100100000101000001010000110100001101000000110000001100001011000010110000011100000111000011110000111100000000100000001000100010001000100001001000010010001100100011001000001010000010100010101000101010000110100001101000111010001110100000011000000110001001100010011000010110000101100011011000110110000011100000111000101110001011100001111000011110001111100011111000000001000000010010000100100001000100010001000100110001001100010000100100001001001010010010100100011001000110010011100100111001000001010000010100100101001001010001010100010101001101010011010100001101000011010010110100101101000111010001110100111101001111010000001100000011001000110010001100010011000100110011001100110011000010110000101100101011001010110001101100011011001110110011101100000111000001110010011100100111000101110001011100110111001101110000111100001111001011110010111100011111000111110011111100111111000000001000000010100000101000001001000010010000101100001011000010001000100010001010100010101000100110001001100010111000101110001000010010000100101001001010010010010100100101001011010010110100100011001000110010101100101011001001110010011100101111001011110010000010100000101010001010100010100100101001001010110010101100101000101010001010101010101010101010011010100110101011101010111010100001101000011010100110101001101001011010010110101101101011011010001110100011101010111010101110100111101001111010111110101111101000000110000001101000011010000110010001100100011011000110110001100010011000100110101001101010011001100110011001101110011011100110000101100001011010010110100101100101011001010110110101101101011000110110001101101011011010110110011101100111011011110110</data>
+          <extradata>1111111111111111T111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</extradata>
+        </log>
+      </trigger>
+    </signal_set>
+  </instance>
+  <embedded_sof_files>
+    <embedded_sof_file id_crc_pairs="" name="counter.sof" size="704004">eJztncGPJEmW1t0jMquis3J3YnuSUoEWjW9PH7JWaDq6d6enR5oBa3pnlgUk
+kloGcUGds13VO7Wq6S66qxFISNggDhxAKjjBaZP/gMOqxNEPaMUJJA4cOK3E
+SFw4LLc5rLYIi8iwDE93f2Yv/Lmbmfv3a5V1lbnF9ywsI82/eGZh8bt/54eZ
+4Y31nzz7W+vy73714y9efPVlcfHF058+KT76/KfPnz578kXx95988eXTzz8r
+3v3gW+9+a1X89a+ePntcvP/et4vVd99597133lu9+0Hxu3+z+NtPXzwpfvD4
+6Yt122yW/dJa8AcXv/nRD95774fvfuej97P5JtKPPnvx9MWzJ4+zN7Pz9T9f
+H//Z3V+83vB/Xlvu/uK3N13TvzClqfl6tsy2FOv/TIf/47/7evZ29jy/rr6+
+bsrHT758+vufffyTH3/5k2/93tPP1jV/+OY/+uP/+Yf/5aeP/qlp88fff/cf
+Ztlf3LT/X+s/n3/14vlXLz7+dP1kv3znk8+/+uzFky++9QePn2bf+/LZ44+f
+f/H5Hzz55MXHTz/79PO/elIU37uuMH9f/8tEKX76+NsfP376+0++fPHxB6vf
++/5b3/303fe+8+4n7z9+/7uffvKb7z/+9nvf+e5b72we/c7ew79nQlrh638X
+j5/846efPPn+W/uD91bx/McvfvL9t3a9+/LzT98qvvryyReffP543XT1T354
+zS7KnvL33qk/jf0hOGsbgvXD6kOw1v+V7N+8Orke9aM/+lG2/REs1j9zZX9K
+N+Trn9di/T892/zzpkm+/791J86zk0zlF+saZdQ8MWGz7MooHK+l16+pY7WV
+1G+8PLr82RurteRZY88a0bN1w5nOrrWK9VPcPIULE+Q805tX337/tLlwtL1w
+tKm52D6pxTrs5kkbtWzzat+yvGluX72G6/HbNs/2Qs1217ePvRnqbT892Tx0
+F3b7M1G7a3mRLVW2sD3zQde0bL/21ff6V2l6fW33pDZP+uh64PYeohpfWfuR
+s8yOke17sXvsrU76PbNd3yujfNTQxP5oXCxua938/PfVb/pXaXp9zT4p86S3
+A6J9nxBowO9X52XPvUgC798cALxZhe7AqLkI3QEXCrMKAGCazA94TPQz5u23
+SSHwfksMssvQHUiJ6F9YqgfNN3vQBACAIFQsSvzvQY9DdwCAiFDSgp5rOB3R
+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
+gFbgqOCoMjgqAEaDNgU9qdkmDRdWDU1dFMfssDQPCa1S6oRdZo/rF+o1Tsr7
+sgOVvaK0hAbK6zRC26TpQkONkzvssDQrSqtySiQn7K5JSJS04ExasCsqdAe6
+obsKMA1r+0RwU+NixQ9LonNKq+KKGWFtEwBAYLQpBnZU/LBuBnBUAWb0A8I6
+wYwOJkgZugNOcMwLAMmjTQFHBUdVqeGFtU0AAGAy4Mx0cBttioEd1ZHwfbog
+tVJ2VGf8sCRXpBYcFQB7SL+mC2E9kB5KWjC63QlSKGnBYUZKmwI5qiEc1Tz2
+HNVpwo7qubBe8C/p7Q0lLTjaKR0AEAwlLQhHlY3LUR2Qo1ryw5JoUivlHNWF
+sJ6GTwDAl0QPzgMxk7ubsBjmhE9tioEdVS58n16QWtE4KuSoAAAAgNGiTYEc
+VaQ5qgPCOhlnjgoAIEP0C97RbwgH00WbAo4KjqpSwwtrmwAAwtPxhN15w9Tg
+4hE/LMnLGaF1KnXCboijiJ/lsgfcXt6jtIQGyuc0Qtuk8UK9xv3M2GEdzCmt
+/VMiOWFtk5BI330LYb3uJO4vuq44F6bwN6zERLBv8mjmh/nkVh6QWrYm44Xd
+mymltwmMF+xpA70QwlHxwzohtKQcVXuLugjdEf8ZnR/WTa8zOgBxEn1WH8e8
+AJA+cFRwVBkcFQAA8ChDd8BJ6JWDCRLAUSl+WBpqeTRpR6VyYUd1QmrZmgyO
+CgAlLYiVJjD+3QlSJDpSyFEN5ahWseeoSlvDDBuDo7orrBf6S3r7I9GJCgyF
+9DFc4ijsFgMAAE9U6A44wZQORosK3QEn+PUDAABP4n8Pehy6AwAAAOLjZv1G
+7dXO9Pb/2lw7Wr8pKK5X9MyF5brGXtirya5rfNlomrCL2zsMDtQyGC21W64z
+/arU2Keyk640rT7bWz2LZ6DyIluW2zAHahl6G6itIzrJbv1cr3brTeZxKr+w
+A3mVnd8Ibi5c3YTY67AXJ3q2bn+W6dlVlv377Hey+8vs69dhs626N7sftJ6t
+n/qZvv6H6ddmMK5/9PapWOlK0+0oXex6tjfmfyH7devM/u+5GWnKqM2KD/7e
+/nW1HtrLP3t9V5vK++s/D16/zusV6x+FrfgH2a2HbCpMi//3+hvZH7/+58RD
+TIvKQ0wL85C6RrY59SPT5lVwZ79jO41aRUW01uK6Y7+Wvfym7foi+/l/zZv7
+sdei8hDbYtPDNorsX3z0o/2KtzdfBf1XzOv+3vov5S9efy1f/fnruanKbFX2
+n8y//vXr18vsf7/+a1lpXvfrKnU0+/X/fN1qXZVXW7Wx+dTf5rOJZmNxuan6
+89cfbSOuH3hk5W0ntlW7fi1vIla6alt9ZDqxV7Xp105+7zmesl+S5ifufiU2
+tzjgpbn/CrAtKg/J9l6J+rZoJUr778yBXW98NddacIb3ZPNyyG9+XJufoHn9
+NfycNy+Qzc95/UNVWfHbv2wfePsFsmtltT7ae3mbv1RfkiTF+k/+r/7SvOFV
+uv29ME/lKPvi55vtItt+6d0TyvWvfnfv9XfzC7Wu2t5N/scf/X/6+EJd
+
+    
+    
+    </embedded_sof_file>
+  </embedded_sof_files>
+  <static_plugin_mnemonics/>
+  <mnemonics/>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="config widget visible" value="1"/>
+    <single attribute="data log widget visible" value="0"/>
+    <single attribute="hierarchy widget height" value="2"/>
+    <single attribute="hierarchy widget visible" value="0"/>
+    <single attribute="instance widget visible" value="1"/>
+    <single attribute="jtag widget visible" value="1"/>
+    <single attribute="lock mode" value="0"/>
+    <single attribute="sof manager visible" value="1"/>
+    <multi attribute="frame size" size="2" value="1280,752"/>
+    <multi attribute="jtag widget size" size="2" value="349,226"/>
+  </global_info>
+</session>
