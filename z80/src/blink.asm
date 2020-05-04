@@ -3,22 +3,22 @@
 loop:
   ld a, $00
   out ($00), a
-  ld de, $8000
 
-delay1:
-  dec de
-  ld a, d
-  or e
-  jp nz, delay1
+  call delay
 
   ld a, $ff
   out ($00), a
-  ld de, $8000
 
-delay2:
+  call delay
+
+  jp loop
+
+; wait for 1s
+delay:
+  ld de, $8000
+_delay:
   dec de
   ld a, d
   or e
-  jp nz, delay2
-
-  jp loop
+  jp nz, _delay
+  ret
