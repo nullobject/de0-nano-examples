@@ -92,7 +92,7 @@ begin
   )
   port map(
     clk  => clk,
-    cs   => prog_cs and cpu_rfsh_n and not cpu_rd_n,
+    cs   => prog_cs and not cpu_mreq_n and not cpu_rd_n,
     addr => cpu_addr(7 downto 0),
     dout => cpu_din
   );
@@ -119,14 +119,14 @@ begin
   set_led_register : process (clk)
   begin
     if rising_edge(clk) then
-      if led_cs = '1' and cpu_wr_n = '0' then
+      if led_cs = '1' and cpu_ioreq_n = '0' and cpu_wr_n = '0' then
         led_reg <= cpu_dout;
       end if;
     end if;
   end process;
 
   prog_cs <= '1' when cpu_addr >= x"0000" and cpu_addr <= x"7fff" else '0';
-  led_cs  <= '1' when cpu_addr = x"8000" else '0';
+  led_cs  <= '1' when cpu_addr(7 downto 0) = x"00" else '0';
 
   led <= led_reg;
 end arch;

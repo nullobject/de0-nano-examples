@@ -1,7 +1,6 @@
-  ld hl, $8000
-
 loop:
-  ld (hl), $00
+  ld a, $00
+  out ($00), a
   ld de, $8000
 
 delay1:
@@ -10,7 +9,8 @@ delay1:
   or e
   jp nz, delay1
 
-  ld (hl), $ff
+  ld a, $ff
+  out ($00), a
   ld de, $8000
 
 delay2:
