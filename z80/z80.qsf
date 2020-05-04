@@ -37,5 +37,6 @@ set_global_assignment -name SDC_FILE src/z80.sdc
 set_global_assignment -name QIP_FILE src/t80.qip
 set_global_assignment -name VHDL_FILE src/clock_divider.vhd
 set_global_assignment -name VHDL_FILE src/reset_gen.vhd
+set_global_assignment -name VHDL_FILE src/single_port_ram.vhd
 set_global_assignment -name VHDL_FILE src/single_port_rom.vhd
 set_global_assignment -name VHDL_FILE src/z80.vhd
