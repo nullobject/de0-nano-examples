@@ -62,8 +62,13 @@ architecture arch of z80 is
   -- write: the data bus contains a byte to write somewhere
   signal cpu_wr_n : std_logic;
 
+  -- data output signals
+  signal rom_dout : std_logic_vector(7 downto 0);
+  signal ram_dout : std_logic_vector(7 downto 0);
+
   -- chip select signals
-  signal prog_cs : std_logic;
+  signal rom_cs : std_logic;
+  signal ram_cs : std_logic;
   signal led_cs : std_logic;
 
   -- registers
@@ -84,17 +89,31 @@ begin
     rout => reset
   );
 
-  prog_rom : entity work.single_port_rom
+  rom : entity work.single_port_rom
   generic map(
-    ADDR_WIDTH => 8,
+    ADDR_WIDTH => 12,
     DATA_WIDTH => 8,
     INIT_FILE  => "rom/blink.mif"
   )
   port map(
     clk  => clk,
-    cs   => prog_cs and not cpu_mreq_n and not cpu_rd_n,
-    addr => cpu_addr(7 downto 0),
-    dout => cpu_din
+    cs   => rom_cs and not cpu_mreq_n and not cpu_rd_n,
+    addr => cpu_addr(11 downto 0),
+    dout => rom_dout
+  );
+
+  ram : entity work.single_port_ram
+  generic map(
+    ADDR_WIDTH => 12,
+    DATA_WIDTH => 8
+  )
+  port map(
+    clk  => clk,
+    cs   => ram_cs and not cpu_mreq_n,
+    addr => cpu_addr(11 downto 0),
+    din  => cpu_dout,
+    dout => ram_dout,
+    we   => not cpu_wr_n
   );
 
   cpu : entity work.T80s
@@ -125,8 +144,12 @@ begin
     end if;
   end process;
 
-  prog_cs <= '1' when cpu_addr >= x"0000" and cpu_addr <= x"7fff" else '0';
-  led_cs  <= '1' when cpu_addr(7 downto 0) = x"00" else '0';
+  -- mux CPU data input
+  cpu_din <= rom_dout or ram_dout;
+
+  rom_cs <= '1' when cpu_addr >= x"0000" and cpu_addr <= x"0fff" else '0';
+  ram_cs <= '1' when cpu_addr >= x"1000" and cpu_addr <= x"1fff" else '0';
+  led_cs <= '1' when cpu_addr(7 downto 0) = x"00" else '0';
 
   led <= led_reg;
 end arch;

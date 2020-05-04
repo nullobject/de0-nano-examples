@@ -1,3 +1,5 @@
+  ld sp, $2000
+
 loop:
   ld a, $00
   out ($00), a
