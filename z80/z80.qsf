@@ -11,6 +11,8 @@ set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_location_assignment PIN_R8 -to clk
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk
 
+set_location_assignment PIN_J15 -to key[0]
+set_location_assignment PIN_E1  -to key[1]
 set_location_assignment PIN_A15 -to led[0]
 set_location_assignment PIN_A13 -to led[1]
 set_location_assignment PIN_B13 -to led[2]
@@ -32,12 +34,8 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led[7]
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name TOP_LEVEL_ENTITY z80
 set_global_assignment -name SDC_FILE src/z80.sdc
+set_global_assignment -name QIP_FILE src/t80.qip
 set_global_assignment -name VHDL_FILE src/clock_divider.vhd
+set_global_assignment -name VHDL_FILE src/reset_gen.vhd
 set_global_assignment -name VHDL_FILE src/single_port_rom.vhd
-set_global_assignment -name VHDL_FILE src/t80/T80_ALU.vhd
-set_global_assignment -name VHDL_FILE src/t80/T80_MCode.vhd
-set_global_assignment -name VHDL_FILE src/t80/T80_Pack.vhd
-set_global_assignment -name VHDL_FILE src/t80/T80_Reg.vhd
-set_global_assignment -name VHDL_FILE src/t80/T80s.vhd
-set_global_assignment -name VHDL_FILE src/t80/T80.vhd
 set_global_assignment -name VHDL_FILE src/z80.vhd
