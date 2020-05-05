@@ -1,24 +1,30 @@
-  ld sp, $2000
+STACK_ADDR: equ $2000 ; stack address
+DELAY_DURATION: equ $8000; 1 second
 
-loop:
+  di
+  ld sp, STACK_ADDR
+
+start:
   ld a, $00
   out ($00), a
 
+  ld bc, DELAY_DURATION
   call delay
 
   ld a, $ff
   out ($00), a
 
+  ld bc, DELAY_DURATION
   call delay
 
-  jp loop
+  jp start
 
-; wait for 1s
+; Delays for a duration.
+;
+; bc - duration
 delay:
-  ld de, $8000
-_delay:
-  dec de
-  ld a, d
-  or e
-  jp nz, _delay
+  dec bc
+  ld a, b
+  or c
+  jp nz, delay
   ret
