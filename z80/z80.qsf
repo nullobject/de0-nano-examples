@@ -34,7 +34,7 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led[7]
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name TOP_LEVEL_ENTITY z80
 set_global_assignment -name SDC_FILE src/z80.sdc
-set_global_assignment -name QIP_FILE src/t80.qip
+set_global_assignment -name QIP_FILE lib/t80/t80.qip
 set_global_assignment -name VHDL_FILE src/clock_divider.vhd
 set_global_assignment -name VHDL_FILE src/reset_gen.vhd
 set_global_assignment -name VHDL_FILE src/single_port_ram.vhd
