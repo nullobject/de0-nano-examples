@@ -37,14 +37,14 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity counter is
+entity top is
   port (
     clk : in std_logic;
     led : out std_logic_vector(7 downto 0)
   );
-end counter;
+end top;
 
-architecture arch of counter is
+architecture arch of top is
   signal n : natural range 0 to 255;
   signal cen : std_logic;
 begin
