@@ -37,15 +37,15 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity z80 is
+entity top is
   port (
     clk : in std_logic;
     key : in std_logic_vector(1 downto 0);
     led : out std_logic_vector(7 downto 0)
   );
-end z80;
+end top;
 
-architecture arch of z80 is
+architecture arch of top is
   -- clock enable
   signal cen : std_logic;
 
